@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Go Fitness</title>
+  </head>
+  <body>
+    <header class="col-12 header">
+      <h1>Go Fitness</h1>
+      <p>The place where your fitness journey begins</p>
+    </header>
+    <div class="content">
+      <div class="row">
+        <nav class="col-2 menu">
+          <ul>
+            <li id="MobileMenu">
+              <a href="#" onclick="ShowMenu()">Menu</a>
+            </li>
+            <li id="Home">
+              <a href="index.html"> Home </a>
+            </li>
+            <li id="Appointment">
+              <a href="appointment.html"> Appointment </a>
+            </li>
+            <li id="Excercise">
+              <a href="excercise.html"> Excercises </a>
+            </li>
+          </ul>
+        </nav>
+        <section class="col-10 form">
+          <h2>Want to book a training appointment?</h2>
+          <form action="#" method="post" onsubmit="return validateForm()">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required />
+
+            <label for="time">Preferred Time:</label>
+            <select id="time" name="time">
+              <option value="morning">Morning</option>
+              <option value="afternoon">Afternoon</option>
+              <option value="evening">Evening</option>
+            </select>
+
+            <input type="submit" value="Book Appointment" />
+          </form>
+        </section>
+      </div>
+    </div>
+    <footer class="col-12 footer">
+      &copy; 2024 Plamen Penkov. All rights flexed!
+    </footer>
+  </body>
+</html>
